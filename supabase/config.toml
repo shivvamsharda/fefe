@@ -1,0 +1,48 @@
+
+project_id = "gusyejevgytoaodujgbm"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "storage", "graphql_public"]
+
+[db]
+port = 54322
+
+[studio]
+port = 54323
+
+[inbucket]
+port = 54324
+
+[storage]
+enabled = true
+
+[auth]
+enabled = true
+site_url = "http://localhost:3000"
+
+[analytics]
+enabled = false
+
+[edge_functions]
+[edge_functions.mux-streaming]
+verify_jwt = false
+
+[edge_functions.sync-mux-stream-statuses]
+verify_jwt = false
+
+[edge_functions.auto-sync-streams]
+verify_jwt = false
+
+[edge_functions.create-livekit-obs-stream]
+verify_jwt = false
+
+[edge_functions.twitter-bot-post]
+verify_jwt = false
+
+[functions.mux-vod-webhook]
+verify_jwt = false
+
+[functions.bunny-webhook]
+verify_jwt = false
